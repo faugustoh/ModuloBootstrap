@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1439712ee9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Exercício - Módulo 17 - Botstrap</title>
+</head>
+<body>
+    <header class="mb-0">        
+        <div class="container py-3">
+            <div class="row">
+                <div class="col justify-content-center justify-content-lg-start">
+                    <h1 class="mb-0">
+                        <a href="#" class="d-flex d-lg-block align-items-center my-2 my-lg-0 text-white text-decoration-none">
+                        <img class="img-fluid m-auto" src="./imgs/logo-travel.png" alt="First In Travel" title="First In Travel Logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <ul class="nav my-2 my-md-0 text-small justify-content-center justify-content-lg-end">
+                        <li>
+                            <a href="#" class="nav-link text-secondary">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                            Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sobrenos" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
+                            Quem somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#roteiros" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                            Roteiros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                            Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="carouselTripsAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselTripsCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselTripsCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselTripsCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div style="height: 85vh; background-image: url(./imgs/slider-01.jpg); background-size: cover; background-position: center;"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Roma - Itália</h5>
+              <p>O Coliseu de Roma foi construído entre 72 d.C e 80 d.C.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div style="height: 85vh; background-image: url(./imgs/slider-02.jpg); background-size: cover; background-position: center;"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amazonas - Brasil</h5>
+              <p>A floresta tropical amazônica é a maior floresta tropical do mundo</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div style="height: 85vh; background-image: url(./imgs/slider-03.jpg); background-size: cover; background-position: center;"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cairo - Egito</h5>
+              <p>Existem entre 118 e 138 pirâmides egípcias identificadas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTripsAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTripsAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="sobrenos" class="container-fluid mt-5 pt-5">
+        <div class="row justify-content-center justify-content-lg-end">
+            <div class="col-11 col-lg-6 col-xl-5 pt-3 pb-5 pt-lg-0 pb-lg-5 px-3 ps-lg-5 pe-lg-3  ps-xl-3 order-2 order-lg-1">
+                <h2>Planeje sua viagem com a gente</h2>
+                <p>
+                    Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.
+                </p>
+                <h3>
+                    Roteiros incríveis!
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button type="button" class="btn btn-danger"><i class="fa-sharp fa-solid fa-plane-departure"></i><strong> Quero viajar</strong></button>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 firstimg" style="background-image: url(./imgs/full-shot-travel-concept-with-landmarks.png); background-position: center; background-size: cover;">
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="roteiros" class="w-100 bggray py-0 py-lg-5">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                <img src="./imgs/trip-03.jpg" class="img-fluid rounded" title="Coliseo" alt="Coliseo">
+                <div class="card-body">
+                    <h3>Coliseo</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#roteiroa"><i class="fa-sharp fa-solid fa-check"></i> Quero reservar</button>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                <img src="./imgs/trip-02.jpg" class="img-fluid rounded" title="Amazônia" alt="Amazônia">
+                <div class="card-body">
+                    <h3>Amazônia</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#roteirob"><i class="fa-sharp fa-solid fa-check"></i> Quero reservar</button>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                <img src="./imgs/trip-01.jpg" class="img-fluid rounded" title="Pirâmides do Egito" alt="Pirâmides do Egito">
+                <div class="card-body">
+                    <h3>Egito</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#roteiroc"><i class="fa-sharp fa-solid fa-check"></i> Quero reservar</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="w-100 py-0 py-lg-5 text-center" style="background-image: url(./imgs/bg-contato.jpg); background-position: center; background-size: cover;">
+        <div class="container justify-content-center pt-5">
+            <h3 class="col-11 col-lg-8 m-auto mb-4">Faça já uma cotação!</h3>
+            <p class="col-11 col-lg-8 m-auto" style="text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="container py-5 text-center">
+            <form class="row w-75 justify-content-center m-auto px-lg-5 g-3 pleasefullwidth">
+                <div class="col-11 col-lg-6 m-auto mb-3 text-start">
+                    <label for="validationServer01" class="mb-1 ms-2">Nome:</label>
+                    <input type="text" class="form-control" id="validationServer01" placeholder="Nome" required>                    
+                </div>
+                <div class="col-11 col-lg-6 m-auto mb-3 text-start">
+                    <label for="validationServer02" class="mb-1 ms-2">Sobrenome:</label>
+                    <input type="text" class="form-control" id="validationServer02" placeholder="Sobrenome" required>
+                </div>
+                <div class="col-11 col-lg-8 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer03" class="mb-1 ms-2">E-mail:</label>
+                    <input type="text" class="form-control" id="validationServer03" placeholder="exemplo@dominio.com" required>
+                </div>
+                <div class="col-11 col-lg-4 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer04" class="mb-1 ms-2">Fone / WhatsApp:</label>
+                    <input type="text" class="form-control" id="validationServer04" placeholder="(11) 91234-5678" required>
+                </div>
+                <div class="col-11 col-lg-7 m-auto mb-3 text-start">
+                    <label for="validationServer05" class="mb-1 ms-2">Endereço:</label>
+                    <input type="text" class="form-control" id="validationServer05" placeholder="Rua, Avenida, Alamenda..." required>
+                </div>
+                <div class="col-11 col-md-4 col-lg-2 m-auto mb-3 text-start">
+                    <label for="validationServer06" class="mb-1 ms-2">Número:</label>
+                    <input type="text" class="form-control" id="validationServer06" placeholder="Número" required>
+                </div>
+                <div class="col-11 col-md-6 col-lg-3 m-auto mb-3 text-start">
+                    <label for="validationServer07" class="mb-1 ms-2">Complemento:</label>
+                    <input type="text" class="form-control" id="validationServer07" placeholder="Complemento" required>
+                </div>
+                <div class="col-11 col-lg-4 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer08" class="mb-1 ms-2">Bairro:</label>
+                    <input type="text" class="form-control" id="validationServer08" placeholder="Bairro" required>
+                </div>
+                <div class="col-11 col-lg-3 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer09" class="mb-1 ms-2">Cidade:</label>
+                    <input type="text" class="form-control" id="validationServer09" placeholder="Cidade" required>
+                </div>
+                <div class="col-11 col-md-3 col-lg-2 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer10" class="mb-1 ms-2">Estado:</label>
+                    <select class="form-select" id="validationServer10" aria-describedby="validationServer09Feedback" required>
+                        <option selected disabled value="">AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div class="col-11 col-md-7 col-lg-3 m-auto mb-3 mb-lg-5 text-start">
+                    <label for="validationServer11" class="mb-1 ms-2">CEP:</label>
+                    <input type="text" class="form-control" id="validationServer11" placeholder="01234-000" required>
+                </div>
+                <div class="col-11 col-lg-12 m-auto mb-4 text-start">
+                    <label for="validationServer12" class="mb-1 ms-2">Mensagem:</label>
+                    <textarea type="text" class="form-control" rows="3" id="validationServer12" required></textarea>
+                </div>                  
+                <div class="col-11 col-lg-12 m-auto mb-0 text-start">
+                    <button class="btn btn-danger" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="w-100">
+        <div class="container py-5">
+          <ul class="nav justify-content-center pb-3 mb-3" style="border-bottom: 1px solid #333;">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+            <li class="nav-item"><a href="#sobrenos" class="nav-link px-2">Quem Somos</a></li>
+            <li class="nav-item"><a href="#roteiros" class="nav-link px-2">Roteiros</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link px-2">Contato</a></li>
+          </ul>
+          <p class="text-center">Todos os Direitos Reservados &bull; First In Travel&reg;</p>
+        </div>
+    </footer>
+
+    <!-- Modal Coliseu -->
+    <div class="modal fade" id="roteiroa" tabindex="-1" aria-labelledby="roteiroaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="roteiroaLabel">Conheça o Coliseu</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mb-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="./imgs/trip-03.jpg" class="img-fluid rounded" title="Coliseo" alt="Coliseo">
+                    </div>
+                    <div class="col">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p class="fw-bold mb-2">Planos</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold mb-2">Pessoas</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="fw-bold mb-2">Valor</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Individual</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">1</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.000,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Casal</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">2</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.800,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Família</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">3 a 5</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$4.500,00</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Amazônia -->
+    <div class="modal fade" id="roteirob" tabindex="-1" aria-labelledby="roteirobLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="roteirobLabel">Conheça a Amazônia</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mb-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="./imgs/trip-02.jpg" class="img-fluid rounded" title="Coliseo" alt="Coliseo">
+                    </div>
+                    <div class="col">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p class="fw-bold mb-2">Planos</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold mb-2">Pessoas</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="fw-bold mb-2">Valor</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Individual</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">1</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.000,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Casal</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">2</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.800,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Família</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">3 a 5</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$4.500,00</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Egito -->
+    <div class="modal fade" id="roteiroc" tabindex="-1" aria-labelledby="roteirocLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="roteirocLabel">Conheça o Egito</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mb-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="./imgs/trip-01.jpg" class="img-fluid rounded" title="Coliseo" alt="Coliseo">
+                    </div>
+                    <div class="col">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p class="fw-bold mb-2">Planos</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold mb-2">Pessoas</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="fw-bold mb-2">Valor</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Individual</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">1</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.000,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Casal</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">2</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$1.800,00</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2">Família</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-2">3 a 5</p> 
+                    </div>
+                    <div class="col text-end">
+                        <p class="mb-2">R$4.500,00</p> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
