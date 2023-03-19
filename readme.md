@@ -92,6 +92,6 @@ https://fontawesome.com/start/
 
 
 # Exercicio
-- Incluir carousel na home antes de sobre
-- Completar o cadastro, tornando os campos obrigatórios
-- Incluir campos: bairro, complemento e telefone
+- incluir carousel na home antes de sobre
+- completar o cadastro, tornando os campos obrigatórios
+- incluir campos: bairro, complemento e telefone
